@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kk.reminders.MainActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0">
+        <TableRow android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:clickable="true">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder Time"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/time_value_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:text="11:00 am"
+                    android:textSize="16sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:clickable="true">
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+
+                <CheckedTextView
+                    android:id="@+id/sun_check"
+                    android:drawableTop="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:text="Sun"/>
+
+                <CheckedTextView
+                    android:id="@+id/mon_check"
+                    android:drawableTop="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:text="Mon"/>
+                <CheckedTextView
+                    android:id="@+id/tue_check"
+                    android:drawableTop="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:text="Tue"/>
+                <CheckedTextView
+                    android:id="@+id/wed_check"
+                    android:drawableTop="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:text="Wed"/>
+                <CheckedTextView
+                    android:id="@+id/thu_check"
+                    android:drawableTop="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:text="Thu"/>
+                <CheckedTextView
+                    android:id="@+id/fri_check"
+                    android:drawableTop="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:text="Fri"/>
+                <CheckedTextView
+                    android:id="@+id/sat_check"
+                    android:drawableTop="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sat"
+                    android:textAlignment="gravity"/>
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:clickable="true">
+            <Button
+                android:id="@+id/set_reminders_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Set Reminders"/>
+        </TableRow>
+        <TableRow android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:clickable="true">
+            <Button
+                android:id="@+id/cancel_reminders_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Cancel Reminders"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
